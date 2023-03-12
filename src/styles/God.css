@@ -1,0 +1,276 @@
+#god {
+    color: white;
+}
+
+#god .god_background {
+    width: 100%;
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#god .god_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+}
+
+#god .god_infos h1 {
+    color: white;
+    font-size: 9.4vw;
+    font-weight: bold;
+    letter-spacing: 7px;
+    text-shadow: 1px 3px 3.5px black;
+}
+
+#god .god_infos h2 {
+    color: var(--smite-gold);
+    font-size: 6.25vw;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+#god #specifications {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 3%;
+}
+
+#god .design_title {
+    width: fit-content;
+    margin: auto;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    color: var(--smite-gold);
+    color: white;
+}
+
+#god .design_title::before,
+#god .design_title::after {
+    background: linear-gradient(270deg, #85784a 60%, transparent);
+    content: '';
+    height: 1px;
+    width: 50px;
+    display: inline-flex;
+    position: relative;
+    bottom: 6px;
+    margin: 0px 6px;
+}
+
+#god .design_title::after {
+    background: linear-gradient(90deg, #85784a 60%, transparent);
+}
+
+#god #specifications ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#god #specifications li {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: var(--smite-gold);
+}
+
+#god .icon {
+    margin-right: 3.5px;
+    position: relative;
+    bottom: 1.5px;
+}
+
+#god .icon_html {
+    font-family: Smiticons;
+    color: white;
+    font-size: 6.2vw;
+    text-shadow: 2px 2px 2.5px black;
+}
+
+#god .icon_url {
+    width: 6.2vw;
+    height: 6.2vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 2px 2px 2.5px black;
+    border-radius: 100%;
+}
+
+#god #switch_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 3%;
+}
+
+#god #switch_container nav {
+    display: flex;
+    width: 100%;
+}
+
+#god #switch_container nav button {
+    background-color: transparent;
+    border: 1px solid var(--smite-gold);
+    outline: none;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: PenumbraLight;
+    width: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+#god #switch_container nav .active_button {
+    background-color: #85784a;
+}
+
+#god #switch_container #abilities {
+    width: 100%;
+}
+
+#god #switch_container #abilities nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#god #switch_container #abilities nav ol li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#god #switch_container #abilities nav ol .active_ability {
+    background-color: #85784a;
+}
+
+#god #switch_container #abilities nav ol li .active_ability_img {
+    filter: sepia(0);
+}
+
+
+#god #switch_container #abilities nav ol li span {
+    text-align: center;
+    padding: 4px;
+    width: 100%;
+    margin-top: 4px;
+
+}
+
+#god #switch_container #abilities nav ol li img {
+    width: 52px;
+    height: 52px;
+    filter: sepia(1);
+    transition: filter 0.5s;
+}
+
+#god #switch_container #abilities nav ol li img:hover {
+    filter: sepia(0);
+}
+
+#god #switch_container #abilities iframe {
+    border: 1px solid var(--smite-gold);
+    border-top: none;
+    width: 100%;
+    height: 46vw;
+}
+
+#god #switch_container #abilities .description {
+    border: 1px solid var(--smite-gold);
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 12.5px;
+    text-align: center;
+}
+
+#god #switch_container #abilities .description h5 {
+    align-self: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#god #switch_container #abilities .description ul {
+    margin-top: 12px;
+}
+
+#god #switch_container #abilities .description ul li {
+    text-align: left;
+    line-height: 15px;
+    margin-top: 8px;
+}
+
+#god #skins {
+    display: flex;
+    flex-direction: column;
+}
+
+#god #skins .design_title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#god #skins .skin {
+    display: flex;
+    height: 115px;
+    margin-bottom: 20px;
+}
+
+#god #skins .skin img {
+    width: 40%;
+    object-fit: contain;
+}
+
+#god #skins .skin .skin_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    right: 15px;
+    border-bottom: 1px solid var(--smite-gold);
+    border-top: 1px solid var(--smite-gold);
+}
+
+#god #skins .skin .skin_details p {
+    text-align: center;
+    font-size: 15px;
+}
+
+#god #skins .skin .skin_details .skin_type {
+    color: var(--smite-gold);
+    font-size: 13px;
+}
+
+#god #skin_modal {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+#god #skin_modal img {
+    width: 80%;
+    border-radius: 2.5%;
+}

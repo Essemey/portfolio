@@ -1,0 +1,133 @@
+#gods {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5%;
+    width: 100%;
+}
+
+.not_find {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.god,
+.god--new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--smite-gold);
+    margin: 10px;
+    margin-bottom: 15px;
+    background-color: var(--smite-gold);
+    position: relative;
+    cursor: pointer;
+}
+
+.god--new::before {
+    content: "Nouveau";
+    font-size: 3vw;
+    color: #ffffff;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-weight: bold;
+    outline: 0.4vw solid rgb(255, 255, 255);
+    padding: 0.8vw;
+}
+
+#gods li p {
+    color: var(--smite-gold);
+    font-size: 5.65vw;
+    font-weight: bold;
+    text-shadow: 2px 2px 2.5px black;
+    text-align: center;
+}
+
+#gods li .god_name {
+    color: white;
+    font-size: 6.9vw;
+    font-weight: bold;
+}
+
+#gods .icon {
+    position: absolute;
+    bottom: -9px;
+    left: -11px;
+}
+
+
+
+@media screen and (min-width: 691px) {
+
+    #gods {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2.5%;
+    }
+
+    .god,
+    .god--new {
+        height: 350px;
+        filter: sepia(0.8);
+        transition: filter 1s;
+    }
+
+    .god {
+        width: 300px;
+    }
+
+    .god--new {
+        width: 620px;
+    }
+
+    .god--new::before {
+        font-family: PenumbraRegular;
+        font-size: 22px;
+        color: red;
+        outline: 3.3px solid red;
+        top: 8px;
+        right: 8px;
+        padding: 8px;
+        transition: color 1s, outline-color 1s;
+    }
+
+    .god--new:hover::before {
+        font-size: 22px;
+        color: white;
+        outline-color: white;
+    }
+
+    .god:hover,
+    .god--new:hover {
+        filter: sepia(0);
+    }
+
+    #gods li .god_name {
+        font-size: 30px;
+    }
+
+    #gods li p {
+        font-size: 26px;
+    }
+
+    #gods .icon_url {
+        width: 40px;
+        height: 40px;
+    }
+
+    #gods .icon_html {
+        font-size: 40px;
+    }
+
+    #gods .icon {
+        bottom: 60px;
+        left: auto;
+    }
+}
