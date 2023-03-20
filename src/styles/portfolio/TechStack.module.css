@@ -1,0 +1,39 @@
+#tech_stack {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #00e3bf57;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+#front,
+#back {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#tech_stack svg {
+    font-size: 30px;
+    color: #00a075;
+}
+
+.icons_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff73974d;
+    padding: 5px;
+    border-radius: 2.5px;
+    margin: 1%;
+    width: 31.1%;
+}

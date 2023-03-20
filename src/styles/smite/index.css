@@ -1,0 +1,217 @@
+@font-face {
+    font-family: PenumbraLight;
+    src: url(/fonts/PenumbraLight.woff);
+}
+
+@font-face {
+    font-family: PenumbraRegular;
+    src: url(/fonts/PenumbraRegular.woff);
+}
+
+@font-face {
+    font-family: Smiticons;
+    src: url(/fonts/Smiticons.woff);
+}
+
+:root {
+    --smite-gold: #ada176;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #071325;
+    list-style: none;
+}
+
+#gods_showcase {
+    font-family: PenumbraLight;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gods_showcase header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#gods_showcase #gods_title {
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+#gods_showcase #gods_title::before,
+#gods_showcase #gods_title::after {
+    background: linear-gradient(270deg, #85784a 60%, transparent);
+    content: '';
+    height: 1px;
+    width: 30vw;
+    display: inline-flex;
+    position: relative;
+    bottom: 10px;
+    margin: 0px 6px;
+}
+
+#gods_showcase #gods_title::after {
+    background: linear-gradient(90deg, #85784a 60%, transparent);
+}
+
+
+.icon_html {
+    font-family: Smiticons;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 2.5px black;
+}
+
+.icon_url {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 2px 2px 2.5px black;
+    border-radius: 100%;
+    display: inline-flex;
+}
+
+#gods_showcase .filter_list .icon {
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+#gods_showcase .filter_list .icon_url {
+    box-shadow: none;
+    filter: brightness(0.5);
+    transition: filter 0.2s;
+}
+
+#gods_showcase .filter_list .icon_html {
+    text-shadow: none;
+    color: #676767;
+    transition: color 0.2s;
+}
+
+#gods_showcase .filter_list .icon_active {
+    color: white;
+    filter: brightness(1)
+}
+
+#gods_showcase #roles,
+#gods_showcase #origins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#gods_showcase .title {
+    color: var(--smite-gold);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#gods_showcase .filter_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 6px;
+}
+
+#gods_showcase .filter_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gods_showcase .filter_search input {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--smite-gold);
+    width: 280px;
+}
+
+
+
+#gods_showcase .filter_search input::placeholder {
+    color: white;
+}
+
+#gods_showcase .filter_list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#gods_showcase .filter_list li[data-tooltip]:before {
+    content: attr(data-tooltip);
+    font-size: 10px;
+    text-shadow: none;
+    color: white;
+    width: max-content;
+    background: #49422b;
+    padding: 4px 8px;
+    position: absolute;
+    bottom: -26px;
+    visibility: hidden;
+    z-index: 4;
+}
+
+#gods_showcase .filter_list li[data-tooltip]:after {
+    border: 0.6rem solid transparent;
+    border-bottom: 0.4rem solid #49422b;
+    border-top: none;
+    content: "";
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -8px;
+    visibility: hidden;
+    z-index: 5;
+}
+
+
+#gods_showcase .filter_list li[data-tooltip]:hover:before,
+#gods_showcase .filter_list li[data-tooltip]:hover:after {
+    visibility: visible;
+}
+
+#gods_showcase .filter_list li .icon_url:hover {
+    filter: brightness(1);
+}
+
+#gods_showcase .filter_list li .icon_html:hover {
+    color: white;
+}
+
+@media (min-width: 1348px) {
+    #gods_showcase header {
+        flex-direction: row;
+    }
+
+    #gods_showcase #roles,
+    #gods_showcase #origins {
+        flex-direction: row;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+
+    #gods_showcase .title {
+        margin-bottom: 0px;
+    }
+}

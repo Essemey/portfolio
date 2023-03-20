@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../../styles/God.css'
+import '../../styles/smite/God.css'
 
 export default function God({ god }) {
 

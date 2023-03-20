@@ -1,0 +1,136 @@
+[
+    {
+        "id": 1,
+        "name": "Ohmyfood",
+        "subtitle": "",
+        "description": "",
+        "img": [
+            "ohmyfood.png",
+            "logo ohmyfood"
+        ],
+        "tags": [
+            "html",
+            "css"
+        ],
+        "links": []
+    },
+    {
+        "id": 2,
+        "name": "Ella Ella",
+        "subtitle": "Agence de communication Culturelle",
+        "description": "Réalisation d'un site web sobre et moderne aux animations originales. Utilisation du framework React Next.js afin de pouvoir mettre en place du pre-rendering et bénficier d'un meilleur référencement (SEO).",
+        "img": [
+            "ellaella-min.png",
+            "logo ohmyfood"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react",
+            "next.js"
+        ],
+        "links": []
+    },
+    {
+        "id": 3,
+        "name": "Reservia",
+        "subtitle": "",
+        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "img": [
+            "reservia.png",
+            "logo reservia"
+        ],
+        "tags": [
+            "html",
+            "css"
+        ],
+        "links": []
+    },
+    {
+        "id": 4,
+        "name": "Smite",
+        "subtitle": "Gallerie des Dieux",
+        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "img": [
+            "smite_clone.png",
+            "logo smite"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react"
+        ],
+        "links": {
+            "url": "/smite"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Kasa",
+        "subtitle": "Gallerie des Dieux",
+        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "img": [
+            "kasa.png",
+            "logo smite"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react"
+        ],
+        "links": []
+    },
+    {
+        "id": 6,
+        "name": "Fish Eye",
+        "subtitle": "Plateforme pour photographes",
+        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "img": [
+            "fisheye.png",
+            "logo smite"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js"
+        ],
+        "links": []
+    },
+    {
+        "id": 7,
+        "name": "HRnet",
+        "subtitle": "Plateforme pour photographes",
+        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "img": [
+            "hrnet.png",
+            "logo smite"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react"
+        ],
+        "links": []
+    },
+    {
+        "id": 8,
+        "name": "React DataTables",
+        "subtitle": "NPM Package",
+        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "img": [
+            "data_tables.png",
+            "logo smite"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react"
+        ],
+        "links": []
+    }
+]

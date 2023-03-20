@@ -1,4 +1,4 @@
-const fs = require("fs")
+/*const fs = require("fs")
 
 exports.createPages = ({ actions }) => {
     const { createPage } = actions
@@ -10,4 +10,4 @@ exports.createPages = ({ actions }) => {
             gods: godsData
         },
     })
-}
+}*/

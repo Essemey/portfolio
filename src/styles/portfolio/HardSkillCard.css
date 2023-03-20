@@ -1,0 +1,82 @@
+#skills #hard_skills .hard_skill_card {
+    border-radius: 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    opacity: 0;
+    padding: 8px;
+    transition: 1.5s opacity;
+}
+
+#skills #hard_skills .visible {
+    opacity: 1;
+}
+
+#skills #hard_skills .hard_skill_card header {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#skills #hard_skills .hard_skill_card header h1 {
+    font-size: 25px;
+    color: white;
+}
+
+#skills #hard_skills .hard_skill_card ul {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    line-height: 25px;
+}
+
+#skills #hard_skills .hard_skill_card header .svg_container {
+    height: fit-content;
+    position: relative;
+}
+
+#skills #hard_skills .hard_skill_card header .svg_container .svg_blur {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    /*background-color: var(--main-green);
+    filter: drop-shadow(0 0 0.75rem crimson);*/
+    z-index: -1;
+}
+
+#skills #hard_skills .hard_skill_card header svg {
+    font-size: 55px;
+    color: var(--main-green);
+    animation: 2s linear alternate infinite neon;
+}
+
+
+@keyframes neon {
+    0% {
+        filter: drop-shadow(0px 0px 4px #79fe0c);
+    }
+
+    25% {
+        filter: drop-shadow(0px 0px 6px #79fe0c);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 8px #79fe0c);
+    }
+
+    75% {
+        filter: drop-shadow(0px 0px 10px #79fe0c);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 12px #79fe0c);
+    }
+}

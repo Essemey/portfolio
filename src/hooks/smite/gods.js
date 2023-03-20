@@ -4,6 +4,7 @@ const ORIGINS_NUMBER = 16;
 const ROLES_NUMBER = 5;
 let GODS = null;
 
+
 //Récupère les différents filtres disponibles (e.g roles, origins)
 const getInfos = (gods, type, limit) => {
     const types = new Set()
@@ -74,3 +75,4 @@ export default function useGods() {
         handleSearch
     }
 }
+

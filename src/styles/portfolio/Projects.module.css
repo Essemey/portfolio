@@ -1,0 +1,218 @@
+@media (min-width: 1280px) {
+
+    html,
+    body,
+    #___gatsby {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+body {
+    font-family: 'Architects Daughter';
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5% 5%;
+}
+
+.project {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background: #0000002b;
+    margin-bottom: 8px;
+}
+
+
+
+.project:hover img {
+    filter: grayscale(0);
+}
+
+.project .description_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project .tags {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    background: #ffffffd9;
+    padding: 3px 1.5px;
+    width: fit-content;
+    border-radius: 2px;
+}
+
+.project .tags li {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px 4px;
+    margin: 0px 1.5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    text-transform: uppercase;
+    width: 50px;
+    text-align: center;
+}
+
+/*.project .tags .html {
+    background-color: orange;
+}
+
+.project .tags .css {
+    background-color: rgb(29, 219, 225);
+}*/
+
+.project .title {
+    margin-top: 10px;
+    line-height: 26px;
+    position: relative;
+}
+
+.project .description {
+    background: white;
+    padding: 2%;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.project .links {
+    position: absolute;
+    top: -6px;
+    right: 0;
+    display: flex;
+}
+
+.project .links svg {
+    background-color: transparent;
+    padding: 2%;
+    font-size: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.project .discover {
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1.5px solid black;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 1s, background-color 1s;
+}
+
+.project .discover:hover {
+    background-color: black;
+    color: white;
+}
+
+.project h3 {
+    font-size: 25px;
+}
+
+.project img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    filter: grayscale(1);
+}
+
+@media (min-width: 480px) {
+
+    .project h3 {
+        font-size: 30px;
+    }
+
+    .project .links svg {
+        font-size: 35px;
+    }
+
+    .project .subtitle {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 600px) {
+    #projects {
+        padding: 5% 10%;
+    }
+}
+
+@media (min-width: 800px) {
+    #projects {
+        padding: 2.5%;
+    }
+
+    .project {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0px;
+        padding: 0%;
+        background: transparent;
+        margin-bottom: 30px;
+    }
+
+    .project:hover .project_infos {
+        background: #ffffff99;
+    }
+
+    .project:hover img {
+        transform: perspective(1000px) rotateY(0deg);
+        filter: grayscale(0) drop-shadow(2px 2px 6px black);
+    }
+
+    .project:nth-child(2n):hover img {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    .project:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    .project:nth-child(2n) img {
+        transform: perspective(1000px) rotateY(-15deg);
+    }
+
+    .project img {
+        width: 50%;
+        border-radius: 5px;
+        transform: perspective(1000px) rotateY(15deg);
+        transition: transform 1s;
+        filter: drop-shadow(2px 2px 6px black) grayscale(1);
+    }
+
+    .project_infos {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        border-radius: 4px;
+        padding: 1.5%;
+        background: #0000002b;
+        height: fit-content;
+        transition: background 1s;
+    }
+}
+
+@media (min-width: 1024px) {
+    #projects {
+        padding: 4%;
+    }
+}
+
+@media (min-width: 1280px) {
+    #projects {
+        padding: 5%;
+    }
+}

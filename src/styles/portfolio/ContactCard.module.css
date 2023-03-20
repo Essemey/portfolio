@@ -1,0 +1,25 @@
+#contact_card {
+    display: flex;
+    align-items: center;
+    background-color: #FF9877;
+    padding: 2px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#contact_card svg {
+    font-size: 30px;
+}
+
+.icon_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2DCDEC;
+    padding: 5px;
+    width: 25%;
+    margin: 5px;
+    border-radius: 5px;
+}

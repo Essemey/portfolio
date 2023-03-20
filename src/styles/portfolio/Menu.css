@@ -1,0 +1,43 @@
+#nav_menu {
+    font-family: 'Passion One', cursive;
+    position: absolute;
+    bottom: 57px;
+    right: -40px;
+}
+
+#nav_menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 90px;
+}
+
+#nav_menu ul li {
+    display: inline-flex;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 115px;
+    transform: perspective(1000px) rotateY(-45deg);
+    -webkit-text-stroke: 3px white;
+    transition: -webkit-text-stroke-color 0.3s, color 1s, transform 1s;
+    color: transparent;
+    /*animation: floating 1.5s alternate infinite;*/
+}
+
+#nav_menu ul #nav_about:hover {
+    color: #458EFD;
+}
+
+#nav_menu ul #nav_contact:hover {
+    color: #FF9979;
+}
+
+#nav_menu ul #nav_techs:hover {
+    color: #25E3C6;
+}
+
+#nav_menu ul li:hover {
+    transform: perspective(1000px) rotateY(-25deg);
+    -webkit-text-stroke-color: transparent;
+}

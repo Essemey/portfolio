@@ -1,0 +1,20 @@
+.project_card {
+    background-color: white;
+    height: 450px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px inset var(--main-green);
+    transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+}
+
+.project_card:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.project_card img {
+    height: 210px;
+    width: 100%;
+    border-radius: 5px 5px;
+}

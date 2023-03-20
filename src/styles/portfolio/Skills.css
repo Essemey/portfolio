@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+#skills {
+    margin-top: 30px;
+    width: 90%;
+}
+
+#skills #soft_skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    line-height: calc(18px + (35 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#skills #soft_skills p:hover {
+    color: #79fe0c9e;
+}
+
+#skills #soft_skills p {
+    font-family: 'Paytone One', sans-serif;
+    color: #ffffff08;
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#skills #soft_skills .bigger {
+    font-size: calc(25px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));
+    color: #00000014;
+}
+
+#skills #soft_skills .bigger:hover {
+    color: var(--main-green);
+}
+
+
+#skills #soft_skills .soft_skills_group {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+#skills #hard_skills {
+    margin-top: 30px;
+    height: 210px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
