@@ -37,6 +37,11 @@
     color: #25E3C6;
 }
 
+#nav_menu ul #nav_projects:hover {
+    color: #575757;
+}
+
+
 #nav_menu ul li:hover {
     transform: perspective(1000px) rotateY(-25deg);
     -webkit-text-stroke-color: transparent;

@@ -1,21 +1,20 @@
-@media (min-width: 1280px) {
-
-    html,
-    body,
-    #___gatsby {
-        height: auto;
-        overflow: visible;
-    }
-}
-
-body {
-    font-family: 'Architects Daughter';
+#projects_background_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #e1e1e1;
+    z-index: 1;
 }
 
 #projects {
     display: flex;
     flex-direction: column;
     padding: 2.5% 5%;
+    font-family: 'Architects Daughter', 'Magra';
+    background-color: transparent;
+    z-index: 2;
 }
 
 .project {
@@ -26,8 +25,6 @@ body {
     background: #0000002b;
     margin-bottom: 8px;
 }
-
-
 
 .project:hover img {
     filter: grayscale(0);
@@ -60,6 +57,7 @@ body {
     text-transform: uppercase;
     width: 50px;
     text-align: center;
+    min-width: max-content;
 }
 
 /*.project .tags .html {
@@ -81,6 +79,7 @@ body {
     padding: 2%;
     border-radius: 2px;
     margin-top: 10px;
+    width: 100%;
 }
 
 .project .links {
@@ -96,6 +95,7 @@ body {
     font-size: 30px;
     margin-left: 5px;
     cursor: pointer;
+    color: black;
 }
 
 .project .discover {
@@ -108,6 +108,7 @@ body {
     border: 1.5px solid black;
     text-transform: uppercase;
     cursor: pointer;
+    color: black;
     transition: color 1s, background-color 1s;
 }
 

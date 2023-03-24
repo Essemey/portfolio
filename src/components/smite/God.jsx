@@ -9,7 +9,6 @@ export default function God({ god }) {
 
     const activeButton = (c) => c === content ? 'active_button' : undefined
     const isCurrentAbility = key => key === currentAbility.key ? 'active_ability' : undefined
-    //const getIndexAbility = key => key === 'Passif' ? 4 : +key - 1
 
     const skinModal = selectedSkin && <div id="skin_modal" onClick={() => setSelectedSkin('')} ><img src={selectedSkin} /></div>
 
@@ -64,21 +63,26 @@ export default function God({ god }) {
                 </section>
                 :
                 <section id="history">
-                    <p>Histoire</p>
+                    <iframe src={god.history.video}></iframe>
+                    <div className="description">
+                        <p>{god.history.text}</p>
+                    </div>
                 </section>
             }
         </div>
         <section id="skins">
             <h6 className="design_title">Skins</h6>
-            {god.skins.map((skin, index) =>
-                <div key={index} className="skin">
-                    <img src={skin.image} onClick={() => setSelectedSkin(skin.image)} />
-                    <div className="skin_details">
-                        <p className="skin_title">{skin.name}</p>
-                        <p className="skin_type">{skin.type}</p>
+            <div id="skin_list">
+                {god.skins.map((skin, index) =>
+                    <div key={index} className="skin" onClick={() => setSelectedSkin(skin.image)}>
+                        <img src={skin.image} />
+                        <div className="skin_details">
+                            <p className="skin_title">{skin.name}</p>
+                            <p className="skin_type">{skin.type}</p>
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
+            </div>
         </section>
         {skinModal}
     </section>

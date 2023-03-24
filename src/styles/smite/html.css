@@ -1,0 +1,33 @@
+@font-face {
+    font-family: PenumbraLight;
+    src: url(/fonts/PenumbraLight.woff);
+}
+
+@font-face {
+    font-family: PenumbraRegular;
+    src: url(/fonts/PenumbraRegular.woff);
+}
+
+@font-face {
+    font-family: Smiticons;
+    src: url(/fonts/Smiticons.woff);
+}
+
+:root {
+    --smite-gold: #ada176;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #071325;
+}

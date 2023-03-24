@@ -1,16 +1,12 @@
-body {
-    background-color: #e1e1e1;
+#portfolio_background_container {
     font-family: 'Architects Daughter', 'Magra';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-#___gatsby {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #e1e1e1;
+    z-index: 1;
 }
 
 a {
@@ -19,11 +15,10 @@ a {
 }
 
 @media (min-width: 1280px) {
-
-    html,
-    body,
-    #___gatsby {
-        height: 100%;
-        overflow: hidden;
+    #portfolio_background_container {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0px;
     }
 }

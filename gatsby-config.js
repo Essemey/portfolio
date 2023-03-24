@@ -4,7 +4,9 @@
 module.exports = {
   jsxRuntime: "automatic",
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: 'Essemey | Développeur Front End',
+    description: 'Développeur Front End ambitieux à la recherche de défis à relever !',
+    siteUrl: `https://www.essemey.dev`,
   },
   plugins: [
     `gatsby-plugin-split-css`

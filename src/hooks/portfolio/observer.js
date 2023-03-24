@@ -95,5 +95,7 @@ export const useObserver = (refs, animationObs, url, fullScreen) => {
         }
     }, [url, fullScreen])
 
+    console.log(state.targetUrl)
+
     return { targetUrl: state.targetUrl, animations: state.animationObs };
 }

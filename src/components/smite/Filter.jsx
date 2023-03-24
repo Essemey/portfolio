@@ -1,9 +1,4 @@
-
-
 export default function Filter({ name, label, data, sortGods, isCurrentFilter }) {
-
-
-
 
     return <div id={name}>
         <p className='title'>{label}</p>

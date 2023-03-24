@@ -1,5 +1,7 @@
 #god {
     color: white;
+    font-family: PenumbraLight;
+    background-color: #071325;
 }
 
 #god .god_background {
@@ -19,7 +21,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 70px;
+    top: 11.6vw;
 }
 
 #god .god_infos h1 {
@@ -42,7 +44,7 @@
 #god #specifications {
     display: flex;
     flex-direction: column;
-    padding: 4% 3%;
+    padding: 5% 3%;
 }
 
 #god .design_title {
@@ -59,8 +61,8 @@
 #god .design_title::after {
     background: linear-gradient(270deg, #85784a 60%, transparent);
     content: '';
-    height: 1px;
-    width: 50px;
+    height: 0.2vw;
+    width: 15vw;
     display: inline-flex;
     position: relative;
     bottom: 6px;
@@ -122,7 +124,7 @@
     background-color: transparent;
     border: 1px solid var(--smite-gold);
     outline: none;
-    padding: 10px 5px;
+    padding: 10px 0px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: PenumbraLight;
@@ -168,7 +170,7 @@
     padding: 4px;
     width: 100%;
     margin-top: 4px;
-
+    cursor: pointer;
 }
 
 #god #switch_container #abilities nav ol li img {
@@ -176,25 +178,26 @@
     height: 52px;
     filter: sepia(1);
     transition: filter 0.5s;
+    cursor: pointer;
 }
 
 #god #switch_container #abilities nav ol li img:hover {
     filter: sepia(0);
 }
 
-#god #switch_container #abilities iframe {
+#god #switch_container iframe {
     border: 1px solid var(--smite-gold);
     border-top: none;
     width: 100%;
     height: 46vw;
 }
 
-#god #switch_container #abilities .description {
+#god #switch_container .description {
     border: 1px solid var(--smite-gold);
     margin-top: 5px;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 2%;
     font-size: 12.5px;
     text-align: center;
 }
@@ -222,21 +225,27 @@
 
 #god #skins .design_title {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-#god #skins .skin {
+#god #skins #skin_list {
+    display: flex;
+    flex-direction: column;
+}
+
+#god #skins #skin_list .skin {
     display: flex;
     height: 115px;
     margin-bottom: 20px;
 }
 
-#god #skins .skin img {
+#god #skins #skin_list .skin img {
     width: 40%;
     object-fit: contain;
+    cursor: pointer;
 }
 
-#god #skins .skin .skin_details {
+#god #skins #skin_list .skin .skin_details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,12 +257,13 @@
     border-top: 1px solid var(--smite-gold);
 }
 
-#god #skins .skin .skin_details p {
+#god #skins #skin_list .skin .skin_details p {
     text-align: center;
     font-size: 15px;
+    cursor: pointer;
 }
 
-#god #skins .skin .skin_details .skin_type {
+#god #skins #skin_list .skin .skin_details .skin_type {
     color: var(--smite-gold);
     font-size: 13px;
 }
@@ -271,6 +281,169 @@
 }
 
 #god #skin_modal img {
-    width: 80%;
     border-radius: 2.5%;
+    max-height: 95%;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+@media (min-width: 600px) {
+
+    #god .god_background {
+        height: 42vw;
+    }
+
+    #god .god_infos h1 {
+        font-size: 60px;
+    }
+
+    #god .god_infos h2 {
+        font-size: 30px;
+    }
+
+    #god .design_title {
+        font-size: 25px;
+    }
+
+    #god .design_title::before,
+    #god .design_title::after {
+        bottom: 9px;
+    }
+
+    #god #skins .design_title::before,
+    #god #skins .design_title::after {
+        bottom: 11px;
+    }
+
+    #god #specifications ul {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    #god #specifications li {
+        flex-direction: column;
+        margin: 0px 4vw;
+    }
+
+    #god #specifications li span {
+        margin-bottom: 18px;
+        font-size: 70px;
+        width: 70px;
+        height: 70px;
+    }
+
+    #god #switch_container nav button {
+        padding: 15px 0px;
+        font-size: 18px;
+    }
+
+    #god #switch_container #abilities nav ol li {
+        border: 1px solid var(--smite-gold);
+        width: 100%;
+    }
+
+    #god #switch_container #abilities nav ol li img {
+        border: 1px solid var(--smite-gold);
+        width: 64px;
+        height: auto;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    #god #skins #skin_list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #god #skins #skin_list .skin {
+        flex-direction: column;
+        height: auto;
+        width: fit-content;
+        border: 1px solid var(--smite-gold);
+        margin: 10px;
+    }
+
+    #god #skins #skin_list .skin img {
+        width: 300px;
+    }
+
+    #god #skins #skin_list .skin .skin_details {
+        right: 0px;
+        border: none;
+    }
+
+    #god #skins #skin_list .skin .skin_details p {
+        border-top: 1px solid var(--smite-gold);
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    #god #switch_container #abilities .description h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #god .god_infos h1 {
+        font-size: 80px;
+    }
+
+    #god .god_infos h2 {
+        font-size: 50px;
+    }
+
+    #god .design_title {
+        font-size: 42px;
+    }
+
+    #god .design_title::before,
+    #god .design_title::after {
+        bottom: 15px;
+    }
+
+    #god #specifications {
+        padding: 2% 3%;
+    }
+
+    #god #specifications ul {
+        margin-top: 45px;
+    }
+
+    #god #specifications li {
+        font-size: 18px;
+    }
+
+    #god #specifications li span {
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #god #switch_container {
+        padding: 4% 12%;
+    }
+
+    #god #switch_container nav button {
+        padding: 20px 0px;
+        font-size: 25px;
+    }
+
+    #god #switch_container #abilities nav ol li img {
+        margin-top: 30px;
+        margin-bottom: 26px;
+    }
+
+    #god #switch_container #abilities nav ol li span {
+        padding: 10px;
+    }
+
+    #god #switch_container #abilities .description h5 {
+        font-size: 22px;
+    }
 }

@@ -1,40 +1,10 @@
-@font-face {
-    font-family: PenumbraLight;
-    src: url(/fonts/PenumbraLight.woff);
-}
-
-@font-face {
-    font-family: PenumbraRegular;
-    src: url(/fonts/PenumbraRegular.woff);
-}
-
-@font-face {
-    font-family: Smiticons;
-    src: url(/fonts/Smiticons.woff);
-}
-
-:root {
-    --smite-gold: #ada176;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-body {
-    background-color: #071325;
-    list-style: none;
-}
-
 #gods_showcase {
-    font-family: PenumbraLight;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: PenumbraLight;
+    background-color: #071325;
 }
 
 #gods_showcase header {

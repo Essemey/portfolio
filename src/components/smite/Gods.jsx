@@ -11,7 +11,7 @@ export default function Gods({ gods }) {
 
     return gods.length ? <ul id="gods">
         {gods.map((god, index) =>
-            <Link key={god.name} to={`/smite/${god.name.replace(/\s+/g, '-').toLowerCase()}`} state={{ god }}>
+            <Link key={god.name} to={`/projects/smite/${god.name.replace(/\s+/g, '-').toLowerCase()}`} state={{ god }}>
                 <li className={god?.new ? 'god--new' : 'god'} style={{ backgroundImage: `url('${god.banner}')` }}
                     onClick={() => setModal(s => ({ ...god }))}>
                     <p className="god_name">{god.name}</p>

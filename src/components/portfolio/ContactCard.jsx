@@ -13,10 +13,16 @@ export default function ContactCard() {
 
 
     return <div id={style.contact_card}>
-        {icons.map((icon, index) =>
-            <a key={index} className={style.icon_wrapper} href={icon.link} target="_blank" rel="noopener noreferrer">
-                {Icons[`${icon.componentName}`]()}
-            </a>
-        )}
+        <p>Ouvert à tous types de projets et technologies. Je recherche principalement un CDI, mais suis ouvert au portage salarial.
+            Si vous avez une question ou l'envie d'en apprendre plus, n'hesitez pas à me contacter !
+        </p>
+        <div className={style.contact_links}>
+            {icons.map((icon, index) =>
+                <a key={index} className={style.icon_wrapper} href={icon.link} data-tooltip={icon.textName}
+                    target="_blank" rel="noopener noreferrer">
+                    {Icons[`${icon.componentName}`]()}
+                </a>
+            )}
+        </div>
     </div>
 }

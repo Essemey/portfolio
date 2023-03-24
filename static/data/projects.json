@@ -1,60 +1,12 @@
 [
     {
         "id": 1,
-        "name": "Ohmyfood",
-        "subtitle": "",
-        "description": "",
-        "img": [
-            "ohmyfood.png",
-            "logo ohmyfood"
-        ],
-        "tags": [
-            "html",
-            "css"
-        ],
-        "links": []
-    },
-    {
-        "id": 2,
-        "name": "Ella Ella",
-        "subtitle": "Agence de communication Culturelle",
-        "description": "Réalisation d'un site web sobre et moderne aux animations originales. Utilisation du framework React Next.js afin de pouvoir mettre en place du pre-rendering et bénficier d'un meilleur référencement (SEO).",
-        "img": [
-            "ellaella-min.png",
-            "logo ohmyfood"
-        ],
-        "tags": [
-            "html",
-            "css",
-            "js",
-            "react",
-            "next.js"
-        ],
-        "links": []
-    },
-    {
-        "id": 3,
-        "name": "Reservia",
-        "subtitle": "",
-        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
-        "img": [
-            "reservia.png",
-            "logo reservia"
-        ],
-        "tags": [
-            "html",
-            "css"
-        ],
-        "links": []
-    },
-    {
-        "id": 4,
         "name": "Smite",
-        "subtitle": "Gallerie des Dieux",
-        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "subtitle": "Réadapatation du site Smite",
+        "description": "Réalisation d'un nouveau design pour les pages des différents personnages de l'univers du jeu vidéo Smite. Amélioration du rendu coté serveur. Récupération des données via la création d'un web scraper.",
         "img": [
             "smite_clone.png",
-            "logo smite"
+            "site smite"
         ],
         "tags": [
             "html",
@@ -63,14 +15,89 @@
             "react"
         ],
         "links": {
-            "url": "/smite"
+            "url": "/projects/smite"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Smite WebScraper",
+        "subtitle": "Smite Gods Web Scraper",
+        "description": "Réalisation d'un web scraper afin de récupérer les données des personnages du jeu vidéo Smite. Utilisation de puppeteer pour extraire les informations nécessaires du HTML généré par rendu coté client.",
+        "img": [
+            "web_scraper2.png",
+            "web scraper code"
+        ],
+        "tags": [
+            "js",
+            "puppeteer"
+        ],
+        "links": {
+            "github": "https://github.com/Essemey/json_smite_gods_generator"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Ella Ella",
+        "subtitle": "Agence de communication Culturelle",
+        "description": "Réalisation d'un site web sobre et moderne aux animations originales. Utilisation du framework React Next.js afin de pouvoir mettre en place du pre-rendering et bénficier d'un meilleur référencement (SEO).",
+        "img": [
+            "ellaella-min.png",
+            "site ellaella"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react",
+            "next.js"
+        ],
+        "links": {
+            "url": "https://ellaella.agency"
+        }
+    },
+    {
+        "id": 4,
+        "name": "React DataTables",
+        "subtitle": "Paquet NPM",
+        "description": "Implémentation en React du paquet npm DataTables. Tableau de données ajustable.",
+        "img": [
+            "data_tables.png",
+            "react data_tables"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react"
+        ],
+        "links": {
+            "github": "https://github.com/Essemey/react-data-table"
         }
     },
     {
         "id": 5,
+        "name": "HRnet",
+        "subtitle": "Plateforme de gestion",
+        "description": "Plateforme permettant l'enregistrement des données des nouveaux employés ainsi que leurs visualisation au sein d'un tableau.",
+        "img": [
+            "hrnet.png",
+            "site hrnet"
+        ],
+        "tags": [
+            "html",
+            "css",
+            "js",
+            "react"
+        ],
+        "links": {
+            "github": "https: //github.com/Essemey/ThomasMbondjoEyango_14_30032022"
+        }
+    },
+    {
+        "id": 6,
         "name": "Kasa",
-        "subtitle": "Gallerie des Dieux",
-        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "subtitle": "Plateforme de location d'hébergements",
+        "description": "Réalisation d'un site moderne de location d'hébergements",
         "img": [
             "kasa.png",
             "logo smite"
@@ -81,13 +108,15 @@
             "js",
             "react"
         ],
-        "links": []
+        "links": {
+            "github": "https://github.com/Essemey/ThomasMbondjoEyango_11_30012022/"
+        }
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Fish Eye",
         "subtitle": "Plateforme pour photographes",
-        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "description": "Réalisation d'un site accessible destiné au partage de photographies",
         "img": [
             "fisheye.png",
             "logo smite"
@@ -97,40 +126,44 @@
             "css",
             "js"
         ],
-        "links": []
-    },
-    {
-        "id": 7,
-        "name": "HRnet",
-        "subtitle": "Plateforme pour photographes",
-        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
-        "img": [
-            "hrnet.png",
-            "logo smite"
-        ],
-        "tags": [
-            "html",
-            "css",
-            "js",
-            "react"
-        ],
-        "links": []
+        "links": {
+            "github": "https://github.com/Essemey/ThomasMbondjoEyango_6_20072021"
+        }
     },
     {
         "id": 8,
-        "name": "React DataTables",
-        "subtitle": "NPM Package",
-        "description": "lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, consectetur",
+        "name": "Ohmyfood",
+        "subtitle": "Plateforme de livraison de nourriture",
+        "description": "Réalisation d'un site au design soigné et aux multiples animations, permettant la livraison de nourriture à domicile",
         "img": [
-            "data_tables.png",
-            "logo smite"
+            "ohmyfood.png",
+            "logo ohmyfood"
         ],
         "tags": [
             "html",
-            "css",
-            "js",
-            "react"
+            "css"
         ],
-        "links": []
+        "links": {
+            "github": "https://github.com/Essemey/ThomasMbondjoEyango_3_01042021",
+            "url": "https://essemey.github.io/ThomasMbondjoEyango_3_01042021"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Reservia",
+        "subtitle": "Plateforme de réservation d'hébergements",
+        "description": "Réalisation d'un site moderne et esthétique permettant de réserver ses vacances au sein d'établissements",
+        "img": [
+            "reservia.png",
+            "logo reservia"
+        ],
+        "tags": [
+            "html",
+            "css"
+        ],
+        "links": {
+            "github": "https://github.com/Essemey/ThomasMbondjoEyango_2_15032021",
+            "url": "https://essemey.github.io/ThomasMbondjoEyango_2_15032021"
+        }
     }
 ]

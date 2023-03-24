@@ -15,5 +15,4 @@ const Section = forwardRef(({ img, title, children, ...props }, ref) => {
         </div>
     </section>
 })
-
 export default Section;
