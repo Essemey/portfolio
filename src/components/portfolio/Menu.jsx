@@ -18,6 +18,4 @@ export default function Menu({ switchUrl, fullScreen }) {
             <li id="nav_about" onClick={() => handleClick("about")}>à Propos</li>
         </ul>
     </nav>;
-};
-
-/* <Link to="/projects" style={{ display: 'contents' }}></Link>*/
+}

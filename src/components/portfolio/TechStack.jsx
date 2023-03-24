@@ -1,8 +1,8 @@
-import * as Icons from './svg/TechStack'
-import * as style from '../../styles/portfolio/TechStack.module.css'
+import * as Icons from './svg/TechStack';
+import * as style from '../../styles/portfolio/TechStack.module.css';
 
-const frontValid = ['JavaScript', 'React', 'Angular', 'Gatsby', 'Next.js', 'Redux']
-const backValid = ['Node.js', 'Express', 'Koa', 'Firebase', 'TypeScript', 'GraphQL', 'MySQL', 'MongoDB', 'Prisma']
+const frontValid = ['JavaScript', 'React', 'Angular', 'Gatsby', 'Next.js', 'Redux'];
+const backValid = ['Node.js', 'Express', 'Koa', 'Firebase', 'TypeScript', 'GraphQL', 'MySQL', 'MongoDB', 'Prisma'];
 
 const front = [];
 const back = [];
@@ -10,16 +10,16 @@ const back = [];
 for (const key in Icons) {
     const element = frontValid.find(el => key.startsWith(el.substring(0, 3)));
     if (element) {
-        front.push({ componentName: key, textName: element })
+        front.push({ componentName: key, textName: element });
     } else {
         const element = backValid.find(el => key.startsWith(el.substring(0, 3)));
-        element && back.push({ componentName: key, textName: element })
+        element && back.push({ componentName: key, textName: element });
     }
 }
 const render = array => array.map((element, key) => <div className={style.icon_wrapper} key={key}>
     {Icons[`${element.componentName}`]()}
     <p>{element.textName}</p>
-</div>)
+</div>);
 
 
 export default function TechStack() {
@@ -35,5 +35,5 @@ export default function TechStack() {
                 {render(back)}
             </div>
         </div>
-    </div>
+    </div>;
 }

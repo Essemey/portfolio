@@ -7,10 +7,10 @@ export default function Gods({ gods }) {
 
     const [modalGod, setModal] = useState(null);
 
-    if (modalGod) return <God god={modalGod} />
+    if (modalGod) return <God god={modalGod} />;
 
     return gods.length ? <ul id="gods">
-        {gods.map((god, index) =>
+        {gods.map(god =>
             <Link key={god.name} to={`/projects/smite/${god.name.replace(/\s+/g, '-').toLowerCase()}`} state={{ god }}>
                 <li className={god?.new ? 'god--new' : 'god'} style={{ backgroundImage: `url('${god.banner}')` }}
                     onClick={() => setModal(s => ({ ...god }))}>
@@ -23,5 +23,5 @@ export default function Gods({ gods }) {
                 </li>
             </Link>
         )}
-    </ul> : <p className="not_find">Aucun Dieu ne correspond à ces critères</p>
+    </ul> : <p className="not_find">Aucun Dieu ne correspond à ces critères</p>;
 }

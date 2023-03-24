@@ -16,7 +16,7 @@ import {
     TechStack,
     Title
 } from "../components/portfolio";
-import { SEO } from "../components/Seo"
+import { SEO } from "../components/Seo";
 
 const animationObs = {
     about: {
@@ -88,7 +88,7 @@ function IndexPage() {
         </div>
         <LavaBackGround animation={lavaAnimation} />
     </BackgroundContainer>;
-};
+}
 
 export default IndexPage;
 
@@ -113,4 +113,4 @@ const Contact = forwardRef((props, ref) => <Section ref={ref} id="contact" img={
 
 export const Head = () => (
     <SEO />
-)
+);

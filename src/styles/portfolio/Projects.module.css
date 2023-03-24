@@ -60,14 +60,6 @@
     min-width: max-content;
 }
 
-/*.project .tags .html {
-    background-color: orange;
-}
-
-.project .tags .css {
-    background-color: rgb(29, 219, 225);
-}*/
-
 .project .title {
     margin-top: 10px;
     line-height: 26px;

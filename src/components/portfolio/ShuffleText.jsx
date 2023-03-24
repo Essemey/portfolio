@@ -22,7 +22,7 @@ function ShuffleChar({ char, index, stop }) {
     const shuffle = (char) => {
 
         const indexC = Math.floor(Math.random() * characters.length);
-        const letterC = characters.charAt(indexC);                  //Characters
+        const letterC = characters.charAt(indexC);
         const modifyChar = char.replace(char, letterC);
 
         return modifyChar;
@@ -55,6 +55,6 @@ function ShuffleText({ text, className }) {
             <ShuffleChar key={index} char={char} stop={stop} index={index} />
             : ' '
     )}</h2>;
-};
+}
 
 export default ShuffleText;

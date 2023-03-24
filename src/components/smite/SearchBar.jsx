@@ -6,5 +6,5 @@ export default function SearchBar({ handleSearch, sortGods }) {
                 handleSearch(e.target.value.toLowerCase())
                 sortGods('SEARCH')
             }} />
-    </div>
+    </div>;
 }

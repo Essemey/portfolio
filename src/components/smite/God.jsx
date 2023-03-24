@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import '../../styles/smite/God.css'
+import { useState } from 'react';
+import '../../styles/smite/God.css';
 
 export default function God({ god }) {
 
-    const [content, setContent] = useState('ABILITIES')
-    const [currentAbility, setCurrentAbility] = useState(god.abilities[0])
-    const [selectedSkin, setSelectedSkin] = useState('')
+    const [content, setContent] = useState('ABILITIES');
+    const [currentAbility, setCurrentAbility] = useState(god.abilities[0]);
+    const [selectedSkin, setSelectedSkin] = useState('');
 
-    const activeButton = (c) => c === content ? 'active_button' : undefined
-    const isCurrentAbility = key => key === currentAbility.key ? 'active_ability' : undefined
+    const activeButton = (c) => c === content ? 'active_button' : undefined;
+    const isCurrentAbility = key => key === currentAbility.key ? 'active_ability' : undefined;
 
-    const skinModal = selectedSkin && <div id="skin_modal" onClick={() => setSelectedSkin('')} ><img src={selectedSkin} /></div>
+    const skinModal = selectedSkin && <div id="skin_modal" onClick={() => setSelectedSkin('')} ><img src={selectedSkin} /></div>;
 
     return <section id="god">
         <div className="god_background" style={{ backgroundImage: `url('${god.banner}')` }}>
@@ -85,5 +85,5 @@ export default function God({ god }) {
             </div>
         </section>
         {skinModal}
-    </section>
+    </section>;
 } 

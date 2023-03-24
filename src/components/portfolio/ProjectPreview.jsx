@@ -4,7 +4,6 @@ import { forwardRef } from "react"
 
 const ProjectPreview = forwardRef(({ img, title, switchUrl, ...props }, ref) => {
 
-
     return <section ref={ref}  {...props}>
         <div className="img_wrapper">
             <img src={`/images/projects/${img.src}`} alt={img.alt} />
@@ -18,7 +17,7 @@ const ProjectPreview = forwardRef(({ img, title, switchUrl, ...props }, ref) => 
                 </Link>
             </div>
         </div>
-    </section>
-})
+    </section>;
+});
 
 export default ProjectPreview;

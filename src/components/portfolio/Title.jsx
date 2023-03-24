@@ -1,6 +1,6 @@
 import HiSVG from './svg/Hi';
-export default function Title() {
 
+export default function Title() {
 
     return <h1>
         <div className='sentence first_sentence'>
@@ -15,5 +15,5 @@ export default function Title() {
             <span className='word'>M'Bondjo</span>
             <span className='word'>Eyango</span>
         </div>
-    </h1>
+    </h1>;
 }

@@ -22,7 +22,6 @@
     -webkit-text-stroke: 3px white;
     transition: -webkit-text-stroke-color 0.3s, color 1s, transform 1s;
     color: transparent;
-    /*animation: floating 1.5s alternate infinite;*/
 }
 
 #nav_menu ul #nav_about:hover {

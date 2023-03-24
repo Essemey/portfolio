@@ -5,7 +5,6 @@ import { SEO } from '../../../components/Seo';
 import God from '../../../components/smite/God';
 import '../../../styles/smite/html.css';
 
-
 let needFetch = false;
 
 const correctName = name => name.replace(/\s+/g, '-').toLowerCase();
@@ -41,8 +40,8 @@ export default function GodRouter({ location }) {
 
     return god ? <God god={god} /> : navigate('/projects/smite');
 
-};
+}
 
 export const Head = () => (
     <SEO />
-)
+);

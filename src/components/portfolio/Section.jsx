@@ -13,6 +13,6 @@ const Section = forwardRef(({ img, title, children, ...props }, ref) => {
                 {children}
             </div>
         </div>
-    </section>
-})
+    </section>;
+});
 export default Section;

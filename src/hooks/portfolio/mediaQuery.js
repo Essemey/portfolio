@@ -6,21 +6,21 @@ export const useMediaQuery = pxSize => {
 
     const mediaQ = !isSSR ? window.matchMedia(`(min-width: ${pxSize}px)`) : null;
 
-    const defaultFullScreen = !isSSR ? (window.innerWidth >= pxSize ? true : false) : false
-    const [fullScreen, setFullScreen] = useState(defaultFullScreen)
+    const defaultFullScreen = !isSSR ? (window.innerWidth >= pxSize ? true : false) : false;
+    const [fullScreen, setFullScreen] = useState(defaultFullScreen);
 
-    const handleMediaQuery = () => mediaQ.matches ? setFullScreen(true) : setFullScreen(false)
+    const handleMediaQuery = () => mediaQ.matches ? setFullScreen(true) : setFullScreen(false);
 
     useEffect(() => {
 
         mediaQ.addEventListener("change", handleMediaQuery);
 
         return () => {
-            mediaQ.removeEventListener("change", handleMediaQuery)
-        }
+            mediaQ.removeEventListener("change", handleMediaQuery);
+        };
     }, [])
 
 
 
-    return fullScreen
+    return fullScreen;
 }

@@ -50,8 +50,8 @@ export default function Projects() {
             )}
         </main>
         <LavaBackGround animation="bg_grey" />
-    </BackgroundContainer>
-};
+    </BackgroundContainer>;
+}
 
 export const Head = () => (
     <SEO />

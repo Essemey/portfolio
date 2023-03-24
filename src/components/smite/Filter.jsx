@@ -12,5 +12,5 @@ export default function Filter({ name, label, data, sortGods, isCurrentFilter })
                 </span>
             </li>)}
         </ul>
-    </div>
+    </div>;
 }
