@@ -1,16 +1,19 @@
 @font-face {
     font-family: PenumbraLight;
     src: url(/fonts/PenumbraLight.woff);
+    font-display: swap;
 }
 
 @font-face {
     font-family: PenumbraRegular;
     src: url(/fonts/PenumbraRegular.woff);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Smiticons;
     src: url(/fonts/Smiticons.woff);
+    font-display: swap;
 }
 
 :root {

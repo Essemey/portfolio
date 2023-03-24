@@ -79,7 +79,7 @@ function IndexPage() {
                 <SectionContainer targetUrl={targetUrl} fullScreen={fullScreen}>
                     <About ref={aboutRef} className={aboutAnimation} />
                     <Techs ref={techsRef} className={techsAnimation} />
-                    <ProjectPreview title="Dernier Projet" img={{ src: "smite_clone.png" }} switchUrl={switchUrl}
+                    <ProjectPreview title="Dernier Projet" img={{ src: "smite_clone.png", alt: "smite dieux" }} switchUrl={switchUrl}
                         id="projectPreview" ref={projectPreviewRef} className={projectPreviewAnimation} />
                     <Contact ref={contactRef} className={contactAnimation} />
                 </SectionContainer>
@@ -92,7 +92,7 @@ function IndexPage() {
 
 export default IndexPage;
 
-const About = forwardRef((props, ref) => <Section ref={ref} id="about" img={{ src: "about.png" }} title="Qui suis-je ?" {...props}>
+const About = forwardRef((props, ref) => <Section ref={ref} id="about" img={{ src: "about.png", alt: "développeur" }} title="Qui suis-je ?" {...props}>
     <p className="description_text"><span>Jeune passionné par le web et les technologies qui gravitent autour;
         Cela fait maintenant plus de 3 ans que je développe différents projets essentiellement en Javascript.</span>
         <span>Je prends énormément de plaisir à: résoudre des problèmes, optimiser du code, créer des designs, développer
@@ -103,11 +103,11 @@ const About = forwardRef((props, ref) => <Section ref={ref} id="about" img={{ sr
     </p>
 </Section>);
 
-const Techs = forwardRef((props, ref) => <Section ref={ref} id="techs" img={{ src: "technos.png" }} title="Mes technos" {...props}>
+const Techs = forwardRef((props, ref) => <Section ref={ref} id="techs" img={{ src: "technos.png", alt: "développeur entouré de technologies" }} title="Mes technos" {...props}>
     <TechStack />
 </Section>);
 
-const Contact = forwardRef((props, ref) => <Section ref={ref} id="contact" img={{ src: "contact.png" }} title="Faisons conaissance" {...props}>
+const Contact = forwardRef((props, ref) => <Section ref={ref} id="contact" img={{ src: "contact.png", alt: "développeur au téléphone" }} title="Faisons conaissance" {...props}>
     <ContactCard />
 </Section>);
 

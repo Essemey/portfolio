@@ -1,16 +1,19 @@
 @font-face {
     font-family: Architects Daughter;
     src: url(/fonts/ArchitectsDaughter-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: Passion One;
     src: url(/fonts/PassionOne-Black.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: Magra;
     src: url(/fonts/Magra-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 * {
