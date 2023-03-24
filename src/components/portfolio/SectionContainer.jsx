@@ -6,8 +6,6 @@ export default function SectionContainer({ targetUrl, fullScreen, children }) {
 
     const isClient = useIsClient();
 
-    console.log('1er rendu sessionContainer: fullScreen Value: ', fullScreen);
-
     if (fullScreen && isClient) {
         switch (targetUrl) {
             case 'about':
