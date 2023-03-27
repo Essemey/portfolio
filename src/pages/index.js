@@ -52,6 +52,8 @@ function IndexPage() {
     const projectPreviewRef = useRef(null);
 
     const [url, switchUrl] = useState({ current: 'about', prev: null });
+    const [darkMode, setDarkMode] = useState(false);
+
     const fullScreen = useMediaQuery(1280);
     const { targetUrl, animations } = useObserver([aboutRef, techsRef, contactRef, projectPreviewRef], animationObs, url, fullScreen);
 
