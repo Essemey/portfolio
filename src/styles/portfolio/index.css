@@ -7,6 +7,38 @@
     position: relative;
     background-color: #e1e1e1;
     z-index: 1;
+    transition: background-color 1s;
+}
+
+#portfolio_background_container #moon,
+#portfolio_background_container #sun {
+    position: absolute;
+    right: 1vw;
+    top: 0.5vw;
+    font-size: 8vw;
+    cursor: pointer;
+    border-radius: 100%;
+    max-width: 35px;
+    max-height: 35px;
+    color: #000000bf;
+}
+
+#portfolio_background_container #sun {
+    color: white;
+}
+
+#portfolio_background_container.dark_mode {
+    background-color: #1e1e1e;
+}
+
+#portfolio_background_container.dark_mode #home h1,
+#portfolio_background_container.dark_mode #home section .description {
+    color: white;
+}
+
+#portfolio_background_container.dark_mode #home #projectPreview button {
+    -webkit-text-stroke-color: white;
+    border-color: white;
 }
 
 a {

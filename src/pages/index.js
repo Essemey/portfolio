@@ -17,6 +17,8 @@ import {
     Title
 } from "../components/portfolio";
 import { SEO } from "../components/Seo";
+import { SunSVG } from "../components/portfolio/svg/Sun";
+import { MoonSVG } from "../components/portfolio/svg/Moon";
 
 const animationObs = {
     about: {
@@ -58,7 +60,7 @@ function IndexPage() {
     const { targetUrl, animations } = useObserver([aboutRef, techsRef, contactRef, projectPreviewRef], animationObs, url, fullScreen);
 
     const { aboutAnimation, techsAnimation, contactAnimation, projectPreviewAnimation,
-        lavaAnimation, headerBtnAnimation, shuffleTextAnimation } = animations;
+        lavaAnimation, shuffleTextAnimation } = animations;
 
     useEffect(() => {
         if (fullScreen) {
@@ -71,7 +73,13 @@ function IndexPage() {
         }
     }, [fullScreen]);
 
-    return <BackgroundContainer id="portfolio_background_container">
+    const darkModeClassName = darkMode ? 'dark_mode' : '';
+
+    return <BackgroundContainer id="portfolio_background_container" className={darkModeClassName}>
+        {!darkMode
+            ? <MoonSVG id="moon" onClick={() => setDarkMode(true)} />
+            : <SunSVG id="sun" onClick={() => setDarkMode(false)} />
+        }
         <div id={`${url.current}_container`} className="portfolio_container">
             <Home url={url} >
                 <div id="titles">
