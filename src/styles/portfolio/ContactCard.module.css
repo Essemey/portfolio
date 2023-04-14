@@ -76,6 +76,148 @@
     visibility: visible;
 }
 
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff3b;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#contact_form button {
+    cursor: pointer;
+}
+
+#contact_form input,
+#contact_form textarea,
+#contact_form button {
+    font-family: 'Architects Daughter';
+}
+
+#contact_form_header,
+#contact_form_body {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_form_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact_submit_btn {
+    width: max-content;
+    height: 30px;
+    padding: 8px 14px;
+    border-radius: 1px;
+    margin-left: 5px;
+    background-color: #FF9979;
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact_form input,
+#contact_msg_btn {
+    height: 30px;
+    margin: 5px 0px;
+    padding: 8px;
+    border-radius: 1px;
+}
+
+#contact_msg_btn {
+    background-color: white;
+    text-align: left;
+    transition: width 0.5s;
+    width: 138px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    z-index: 4;
+}
+
+#msg_container.visible #contact_msg_btn {
+    width: 100%;
+}
+
+#contact_form textarea {
+    z-index: 1;
+    position: absolute;
+    bottom: 18px;
+    padding: 8px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: height 0.5s, width 0.5s;
+    width: 138px;
+    height: 0px;
+    resize: none;
+    overflow: hidden;
+}
+
+#contact_form textarea:focus {
+    outline: none;
+    border-top: 1.5px solid #FF9979;
+}
+
+#contact_form_body #msg_container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+#msg_container.visible textarea {
+    height: 300px;
+    width: 100%;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+#contact_form input::placeholder,
+#contact_form textarea::placeholder {
+    color: black;
+}
+
+#exclamation_errors {
+    color: #d70000;
+}
+
+.popup {
+    position: absolute;
+    top: 6px;
+    color: white;
+    width: 95%;
+    padding: 12px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px 8px #5d5d5d;
+    font-size: 12px;
+    z-index: 10;
+}
+
+#success_msg.popup {
+    background-color: #008000d9;
+    top: 52px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#recap_errors {
+    background-color: #d70000de;
+}
+
+#contact_form [data-error] {
+    outline: 1px solid #d70000;
+}
+
 @media (min-width: 400px) {
     .contact_links {
         width: 100%;
@@ -84,7 +226,7 @@
 
 @media (min-width: 800px) {
     #contact_card a[data-tooltip]:after {
-        bottom: 4.5px;
+        bottom: 4px;
     }
 
     #contact_card a[data-tooltip]:before {
@@ -94,6 +236,10 @@
 
 @media (min-width: 1280px) {
     #contact_card a[data-tooltip]:after {
-        bottom: 3.5px;
+        bottom: 15px;
+    }
+
+    #contact_card a[data-tooltip]:before {
+        bottom: -12px;
     }
 }

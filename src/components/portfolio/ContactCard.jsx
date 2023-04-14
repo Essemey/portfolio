@@ -1,5 +1,6 @@
 import * as style from '../../styles/portfolio/ContactCard.module.css';
 import * as Icons from './svg/ContactCard';
+import ContactForm from './ContactForm';
 
 const icons = [
     { componentName: 'GithubSVG', link: 'https://github.com/Essemey', textName: 'GitHub' },
@@ -11,9 +12,10 @@ const icons = [
 export default function ContactCard() {
 
     return <div id={style.contact_card}>
-        <p>Ouvert à tous types de projets et technologies. Je recherche principalement un CDI, mais suis ouvert au portage salarial.
-            Si vous avez une question ou l'envie d'en apprendre plus, n'hesitez pas à me contacter !
+        <p>Je suis ouvert à tous types de projets et technologies. Si vous souhaitez mener à bien un projet avec un développeur
+            bienveillant et à l'écoute alors je suis l'homme qu'il vous faut. N'attendez plus et envoyez moi un message qu'on puisse donner vie à vos idées !
         </p>
+        <ContactForm />
         <div className={style.contact_links}>
             {icons.map((icon, index) =>
                 <a key={index} className={style.icon_wrapper} href={icon.link} data-tooltip={icon.textName}
@@ -24,3 +26,5 @@ export default function ContactCard() {
         </div>
     </div>;
 }
+
+

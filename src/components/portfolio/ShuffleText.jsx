@@ -47,7 +47,7 @@ function ShuffleText({ text, className }) {
     }, [stop]);
 
 
-    if (stop === -1) return <h2>*/RT6.U!V-I X#J[$ W@%</h2>
+    if (stop === -1) return <h2>{text}</h2>
 
     return <h2 className={className}>{[...text].map((char, index) =>
         char !== ' '

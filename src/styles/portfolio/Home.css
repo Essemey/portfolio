@@ -492,6 +492,10 @@
         justify-content: space-between;
     }
 
+    #home #contact .description {
+        z-index: 30;
+    }
+
     #home #contact .description_content {
         transform: none;
     }
@@ -520,13 +524,13 @@
     #home #contact .description {
         width: 55%;
         position: relative;
-        top: 30px;
+        top: -40px;
     }
 
     #home #contact img {
         width: 40.5%;
-        left: -50px;
-        bottom: 320px;
+        left: -20px;
+        bottom: 382px;
     }
 
     #home #about .description {

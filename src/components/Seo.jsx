@@ -20,6 +20,7 @@ export const SEO = ({ title, description, pathname, children }) => {
             <meta name="og:title" content={seo.title} />
             <meta name="twitter:url" content={seo.url} />
             <meta name="og:url" content={seo.url} />
+            <meta name="robots" content="nosnippet" />
             {children}
         </>
     );
