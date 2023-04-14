@@ -214,6 +214,10 @@
     background-color: #d70000de;
 }
 
+#recap_errors ul {
+    list-style: none;
+}
+
 #contact_form [data-error] {
     outline: 1px solid #d70000;
 }
