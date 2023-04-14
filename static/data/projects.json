@@ -39,7 +39,7 @@
         "id": 3,
         "name": "Ella Ella",
         "subtitle": "Agence de communication Culturelle",
-        "description": "Réalisation d'un site web sobre et moderne aux animations originales. Utilisation du framework React Next.js afin de pouvoir mettre en place du pre-rendering et bénficier d'un meilleur référencement (SEO).",
+        "description": "Réalisation d'un site web sobre et moderne aux animations originales. Utilisation du framework React Next.js afin de pouvoir mettre en place du pre-rendering et bénéficier d'un meilleur référencement (SEO).",
         "img": [
             "ellaella-min.png",
             "site ellaella"
